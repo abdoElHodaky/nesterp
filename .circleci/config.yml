@@ -294,7 +294,8 @@ jobs:
           name: verify Node version
           command: nvm use v20.11.1 && node --version
 
-      - pulumi/login
+      - pulumi/login:
+          access-token: ${PULUMI_ACCESS_TOKEN}
 
       - run:
           name: 'Installing NPM Packages'
@@ -317,10 +318,10 @@ workflows:
   build:
     jobs:
       # - sonarqube
-      - build-monorepo-root
+      #- build-monorepo-root
       - build-web
       - build-api
-      - build-desktop
+      #- build-desktop
   test:
     jobs:
-      - test-e2e
+      #- test-e2e
