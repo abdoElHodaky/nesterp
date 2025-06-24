@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   node: circleci/node@5.2.0
   pulumi: pulumi/pulumi@2.1.0
-
+ 
 aliases:
   - &install-node
     name: Install Node with NPM using NVM
