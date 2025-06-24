@@ -328,6 +328,6 @@ workflows:
   
 - deploy:
    jobs:
-    -pulumi_deploy
+    - pulumi_deploy
    requires:
      - build
