@@ -294,7 +294,7 @@ jobs:
           command: nvm use v20.11.1 && node --version
 
       - pulumi/login:
-          access-token: ${{secrets.PULUMI_ACCESS_TOKEN}}
+          access-token: ${secrets.PULUMI_ACCESS_TOKEN}
 
       - run:
           name: 'Installing NPM Packages'
