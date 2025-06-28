@@ -321,6 +321,6 @@ workflows:
       - build-web
       - build-api
       #- build-desktop
-  test:
+  deploy:
     jobs:
-      #- test-e2e
+      - pulumi_deploy
