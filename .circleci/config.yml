@@ -293,7 +293,7 @@ jobs:
           name: verify Node version
           command: nvm use v20.11.1 && node --version
 
-      - run: pulumi login
+      - pulumi/login
         
       - run:
           name: 'Installing NPM Packages'
