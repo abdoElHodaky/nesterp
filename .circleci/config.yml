@@ -294,7 +294,7 @@ jobs:
           command: nvm use v20.11.1 && node --version
 
       - run: pulumi login
-         env:
+        env:
           PULUMI_ACCESS_TOKEN: ${{env.PULUMI_ACCESS_TOKEN}}
           
       - run:
