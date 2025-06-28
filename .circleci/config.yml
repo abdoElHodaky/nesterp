@@ -324,9 +324,3 @@ workflows:
   test:
     jobs:
       #- test-e2e
-  
- deploy:
-   jobs:
-    - pulumi_deploy
-   requires:
-     - build
